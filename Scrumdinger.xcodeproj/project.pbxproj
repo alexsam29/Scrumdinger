@@ -24,9 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		275984372D854FEF00BD5126 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		275984472D854FEF00BD5126 /* ScrumdingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		275984512D854FEF00BD5126 /* ScrumdingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		275984372D854FEF00BD5126 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Scrumdinger.app; path = "/Users/alexsamaniego/Source/iOS Dev/Scrumdinger/build/Debug-iphoneos/Scrumdinger.app"; sourceTree = "<absolute>"; };
+		275984472D854FEF00BD5126 /* ScrumdingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScrumdingerTests.xctest; path = "/Users/alexsamaniego/Source/iOS Dev/Scrumdinger/build/Debug-iphoneos/Scrumdinger.app/PlugIns/ScrumdingerTests.xctest"; sourceTree = "<absolute>"; };
+		275984512D854FEF00BD5126 /* ScrumdingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScrumdingerUITests.xctest; path = "/Users/alexsamaniego/Source/iOS Dev/Scrumdinger/build/Debug-iphoneos/ScrumdingerUITests-Runner.app/PlugIns/ScrumdingerUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -78,18 +78,7 @@
 				27893CC32D8B8E8E00E53B80 /* Scrumdinger */,
 				2759844A2D854FEF00BD5126 /* ScrumdingerTests */,
 				275984542D854FEF00BD5126 /* ScrumdingerUITests */,
-				275984382D854FEF00BD5126 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		275984382D854FEF00BD5126 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				275984372D854FEF00BD5126 /* Scrumdinger.app */,
-				275984472D854FEF00BD5126 /* ScrumdingerTests.xctest */,
-				275984512D854FEF00BD5126 /* ScrumdingerUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,8 +184,11 @@
 			);
 			mainGroup = 2759842E2D854FEF00BD5126;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2727FF2E2DA23F4B00E33C04 /* XCLocalSwiftPackageReference "TutorialResources/ThemeKit" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 275984382D854FEF00BD5126 /* Products */;
+			productRefGroup = 2759842E2D854FEF00BD5126;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -552,6 +544,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		2727FF2E2DA23F4B00E33C04 /* XCLocalSwiftPackageReference "TutorialResources/ThemeKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TutorialResources/ThemeKit;
+		};
+/* End XCLocalSwiftPackageReference section */
 	};
 	rootObject = 2759842F2D854FEF00BD5126 /* Project object */;
 }
