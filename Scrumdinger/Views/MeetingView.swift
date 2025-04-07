@@ -21,14 +21,7 @@ struct MeetingView: View {
                     .strokeBorder(lineWidth: 24)
                     .accessibilityLabel("Time remaining")
                     .accessibilityValue("10 minutes")
-                HStack {
-                    Text("Speaker 1 of 3")
-                    Spacer()
-                    Button(action: {}) {
-                        Image(systemName: "forward.fill")
-                    }
-                    .accessibilityLabel("Next speaker")
-                }
+                MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
         }
         .padding()
