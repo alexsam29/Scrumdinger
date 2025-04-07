@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ThemeKit
 
 struct DetailEditView: View {
     @Binding var scrum: DailyScrum

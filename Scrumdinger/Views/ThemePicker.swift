@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ThemeKit
 
 struct ThemePicker: View {
     @Binding var selection: Theme

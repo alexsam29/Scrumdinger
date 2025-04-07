@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ThemeKit
 
 struct ScrumsView: View {
     @Binding var scrums: [DailyScrum]

@@ -1,12 +1,11 @@
-//
-//  Theme.swift
-//  Scrumdinger
-//
-//  Created by Alex Samaniego on 2025-03-19.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
+
 import SwiftUI
 
-enum Theme: String, CaseIterable, Identifiable, Codable {
+public enum Theme: String, CaseIterable, Identifiable, Codable {
+
     case bubblegum
     case buttercup
     case indigo
@@ -24,20 +23,19 @@ enum Theme: String, CaseIterable, Identifiable, Codable {
     case teal
     case yellow
     
-    var accentColor: Color {
+    public var accentColor: Color {
         switch self {
         case .bubblegum, .buttercup, .lavender, .orange, .periwinkle, .poppy, .seafoam, .sky, .tan, .teal, .yellow: return .black
         case .indigo, .magenta, .navy, .oxblood, .purple: return .white
         }
     }
-    
-    var mainColor: Color {
-        Color(rawValue)
+    public var mainColor: Color {
+        Color(rawValue, bundle: .module)
     }
-    var name :String {
+    public var name: String {
         rawValue.capitalized
     }
-    var id: String {
+    public var id: String {
         name
     }
 }

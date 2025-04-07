@@ -5,6 +5,7 @@
 //  Created by Alex Samaniego on 2025-03-19.
 //
 import Foundation
+import ThemeKit
 
 struct DailyScrum: Identifiable {
     let id: UUID

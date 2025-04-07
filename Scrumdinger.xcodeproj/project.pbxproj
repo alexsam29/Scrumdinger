@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		273CFA142DA3759E002AB967 /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 273CFA132DA3759E002AB967 /* ThemeKit */; };
+		273CFA172DA3767E002AB967 /* TimerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 273CFA162DA3767E002AB967 /* TimerKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		275984482D854FEF00BD5126 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		275984372D854FEF00BD5126 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Scrumdinger.app; path = "/Users/alexsamaniego/Source/iOS Dev/Scrumdinger/build/Debug-iphoneos/Scrumdinger.app"; sourceTree = "<absolute>"; };
-		275984472D854FEF00BD5126 /* ScrumdingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScrumdingerTests.xctest; path = "/Users/alexsamaniego/Source/iOS Dev/Scrumdinger/build/Debug-iphoneos/Scrumdinger.app/PlugIns/ScrumdingerTests.xctest"; sourceTree = "<absolute>"; };
-		275984512D854FEF00BD5126 /* ScrumdingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ScrumdingerUITests.xctest; path = "/Users/alexsamaniego/Source/iOS Dev/Scrumdinger/build/Debug-iphoneos/ScrumdingerUITests-Runner.app/PlugIns/ScrumdingerUITests.xctest"; sourceTree = "<absolute>"; };
+		271F6BF42DA35FC300700C97 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		271F6BF52DA35FC300700C97 /* ScrumdingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		271F6BF62DA35FC300700C97 /* ScrumdingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrumdingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273CFA142DA3759E002AB967 /* ThemeKit in Frameworks */,
+				273CFA172DA3767E002AB967 /* TimerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,9 @@
 				27893CC32D8B8E8E00E53B80 /* Scrumdinger */,
 				2759844A2D854FEF00BD5126 /* ScrumdingerTests */,
 				275984542D854FEF00BD5126 /* ScrumdingerUITests */,
+				271F6BF42DA35FC300700C97 /* Scrumdinger.app */,
+				271F6BF52DA35FC300700C97 /* ScrumdingerTests.xctest */,
+				271F6BF62DA35FC300700C97 /* ScrumdingerUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,9 +111,11 @@
 			);
 			name = Scrumdinger;
 			packageProductDependencies = (
+				273CFA132DA3759E002AB967 /* ThemeKit */,
+				273CFA162DA3767E002AB967 /* TimerKit */,
 			);
 			productName = Scrumdinger;
-			productReference = 275984372D854FEF00BD5126 /* Scrumdinger.app */;
+			productReference = 271F6BF42DA35FC300700C97 /* Scrumdinger.app */;
 			productType = "com.apple.product-type.application";
 		};
 		275984462D854FEF00BD5126 /* ScrumdingerTests */ = {
@@ -126,7 +138,7 @@
 			packageProductDependencies = (
 			);
 			productName = ScrumdingerTests;
-			productReference = 275984472D854FEF00BD5126 /* ScrumdingerTests.xctest */;
+			productReference = 271F6BF52DA35FC300700C97 /* ScrumdingerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		275984502D854FEF00BD5126 /* ScrumdingerUITests */ = {
@@ -149,7 +161,7 @@
 			packageProductDependencies = (
 			);
 			productName = ScrumdingerUITests;
-			productReference = 275984512D854FEF00BD5126 /* ScrumdingerUITests.xctest */;
+			productReference = 271F6BF62DA35FC300700C97 /* ScrumdingerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -185,7 +197,8 @@
 			mainGroup = 2759842E2D854FEF00BD5126;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				2727FF2E2DA23F4B00E33C04 /* XCLocalSwiftPackageReference "TutorialResources/ThemeKit" */,
+				273CFA122DA3759E002AB967 /* XCLocalSwiftPackageReference "ThemeKit" */,
+				273CFA152DA3767E002AB967 /* XCLocalSwiftPackageReference "TimerKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2759842E2D854FEF00BD5126;
@@ -546,11 +559,26 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		2727FF2E2DA23F4B00E33C04 /* XCLocalSwiftPackageReference "TutorialResources/ThemeKit" */ = {
+		273CFA122DA3759E002AB967 /* XCLocalSwiftPackageReference "ThemeKit" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = TutorialResources/ThemeKit;
+			relativePath = ThemeKit;
+		};
+		273CFA152DA3767E002AB967 /* XCLocalSwiftPackageReference "TimerKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = TimerKit;
 		};
 /* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		273CFA132DA3759E002AB967 /* ThemeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ThemeKit;
+		};
+		273CFA162DA3767E002AB967 /* TimerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TimerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2759842F2D854FEF00BD5126 /* Project object */;
 }
