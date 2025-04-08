@@ -13,7 +13,7 @@ struct MeetingHeaderView: View {
     let secondsElapsed: Int
     let secondsRemaining: Int
     let theme: Theme
-    
+
     private var totalSeconds: Int {
         secondsElapsed + secondsRemaining
     }
@@ -31,13 +31,19 @@ struct MeetingHeaderView: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text("Seconds Elapsed").font(.caption)
-                    Label("\(secondsElapsed)", systemImage: "hourglass.tophalf.fill")
+                    Label(
+                        "\(secondsElapsed)",
+                        systemImage: "hourglass.tophalf.fill"
+                    )
                 }
                 Spacer()
                 VStack(alignment: .trailing) {
                     Text("Seconds Remaining").font(.caption)
-                    Label("\(secondsRemaining)", systemImage: "hourglass.bottomhalf.fill")
-                        .labelStyle(.trailingIcon)
+                    Label(
+                        "\(secondsRemaining)",
+                        systemImage: "hourglass.bottomhalf.fill"
+                    )
+                    .labelStyle(.trailingIcon)
                 }
             }
         }
@@ -48,6 +54,10 @@ struct MeetingHeaderView: View {
     }
 }
 
-#Preview (traits: .sizeThatFitsLayout){
-    MeetingHeaderView(secondsElapsed: 60, secondsRemaining: 180, theme: .bubblegum)
+#Preview(traits: .sizeThatFitsLayout) {
+    MeetingHeaderView(
+        secondsElapsed: 60,
+        secondsRemaining: 180,
+        theme: .bubblegum
+    )
 }

@@ -5,9 +5,9 @@
 //  Created by Alex Samaniego on 2025-03-15.
 //
 
+import AVFoundation
 import SwiftUI
 import TimerKit
-import AVFoundation
 
 struct MeetingView: View {
     @Binding var scrum: DailyScrum
@@ -18,18 +18,28 @@ struct MeetingView: View {
             RoundedRectangle(cornerRadius: 16.0)
                 .fill(scrum.theme.mainColor)
             VStack {
-                MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed, secondsRemaining: scrumTimer.secondsRemaining, theme: scrum.theme)
+                MeetingHeaderView(
+                    secondsElapsed: scrumTimer.secondsElapsed,
+                    secondsRemaining: scrumTimer.secondsRemaining,
+                    theme: scrum.theme
+                )
                 Circle()
                     .strokeBorder(lineWidth: 24)
                     .accessibilityLabel("Time remaining")
                     .accessibilityValue("10 minutes")
-                MeetingFooterView(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
+                MeetingFooterView(
+                    speakers: scrumTimer.speakers,
+                    skipAction: scrumTimer.skipSpeaker
+                )
             }
         }
         .padding()
         .foregroundColor(scrum.theme.accentColor)
         .onAppear {
-            scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendeeNames: scrum.attendees.map{$0.name})
+            scrumTimer.reset(
+                lengthInMinutes: scrum.lengthInMinutes,
+                attendeeNames: scrum.attendees.map { $0.name }
+            )
             scrumTimer.speakerChangedAction = {
                 player.seek(to: .zero)
                 player.play()
